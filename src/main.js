@@ -49,6 +49,31 @@ import {
   Card,
   Badge,
   Circle,
+  CountDown,
+  Grid,
+  GridItem,
+  Divider,
+  Empty,
+  ImagePreview,
+  List,
+  NoticeBar,
+  Swipe,
+  SwipeItem,
+  Popover,
+  Progress,
+  Skeleton,
+  Step,
+  Steps,
+  Sticky,
+  IndexBar,
+  IndexAnchor,
+  NavBar,
+  Pagination,
+  Sidebar,
+  SidebarItem,
+  Tabbar,
+  TabbarItem,
+  TreeSelect
 } from "vant";
 
 import "vant/lib/index.css";
@@ -99,11 +124,37 @@ Vue.use(Lazyload, {
   .use(Card)
   .use(Badge)
   .use(Circle)
-
+  .use(CountDown)
+  .use(Grid)
+  .use(GridItem)
+  .use(Divider)
+  .use(Empty)
+  .use(ImagePreview)
+  .use(List)
+  .use(NoticeBar)
+  .use(Swipe)
+  .use(SwipeItem)
+  .use(Popover)
+  .use(Progress)
+  .use(Skeleton)
+  .use(Steps)
+  .use(Step)
+  .use(Sticky)
+  .use(IndexBar)
+  .use(IndexAnchor)
+  .use(NavBar)
+  .use(Pagination)
+  .use(Sidebar)
+  .use(SidebarItem)
+  .use(Tabbar)
+  .use(TabbarItem)
+  .use(TreeSelect)
   .use(Dialog);
 
 Vue.config.productionTip = false;
+import router from './router'
 
 new Vue({
-  render: h => h(App)
+  render: h => h(App),
+  router
 }).$mount("#app");
