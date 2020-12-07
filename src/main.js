@@ -73,7 +73,9 @@ import {
   SidebarItem,
   Tabbar,
   TabbarItem,
-  TreeSelect
+  TreeSelect,
+  AddressEdit,
+  AddressList
 } from "vant";
 
 import "vant/lib/index.css";
@@ -149,6 +151,8 @@ Vue.use(Lazyload, {
   .use(Tabbar)
   .use(TabbarItem)
   .use(TreeSelect)
+  .use(AddressEdit)
+  .use(AddressList)
   .use(Dialog);
 
 Vue.config.productionTip = false;
