@@ -75,7 +75,17 @@ import {
   TabbarItem,
   TreeSelect,
   AddressEdit,
-  AddressList
+  AddressList,
+  ContactCard,
+  ContactEdit,
+  ContactList,
+  CouponCell,
+  CouponList,
+  GoodsAction,
+  GoodsActionButton,
+  GoodsActionIcon,
+  SubmitBar,
+  Sku
 } from "vant";
 
 import "vant/lib/index.css";
@@ -153,6 +163,16 @@ Vue.use(Lazyload, {
   .use(TreeSelect)
   .use(AddressEdit)
   .use(AddressList)
+  .use(ContactCard)
+  .use(ContactEdit)
+  .use(ContactList)
+  .use(CouponCell)
+  .use(CouponList)
+  .use(GoodsAction)
+  .use(GoodsActionButton)
+  .use(GoodsActionIcon)
+  .use(SubmitBar)
+  .use(Sku)
   .use(Dialog);
 
 Vue.config.productionTip = false;
